@@ -23,7 +23,7 @@ eureka:
       serviceUrl:
         defaultZone: http://localhost:8761/eureka/
 customProperty:
-  test: testing1234
+  test: testing12345
 management:
   endpoints:
     web:
