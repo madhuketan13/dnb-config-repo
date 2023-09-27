@@ -5,15 +5,15 @@ spring:
     gateway:
       routes:
         - id: ACCOUNT-SERVICE
-          uri: lb://ACCOUNT-SERViCE
+          uri: lb://ACCOUNT-SERVICE
           predicates:
             - Path= /account/**
         - id: CUSTOMER-SERVICE
-          uri: lb://CUSTOMER-SERViCE
+          uri: lb://CUSTOMER-SERVICE
           predicates:
             - Path= /customer/**
          - id: AUTH-SERVICE
-          uri: lb://AUTH-SERViCE
+          uri: lb://AUTH-SERVICE
           predicates:
             - Path= /authenticate/**
           
