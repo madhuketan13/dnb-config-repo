@@ -12,6 +12,11 @@ spring:
           uri: lb://CUSTOMER-SERViCE
           predicates:
             - Path= /customer/**
+         - id: AUTH-SERVICE
+          uri: lb://AUTH-SERViCE
+          predicates:
+            - Path= /authenticate/**
+          
 server:
   port: 9191
 management:
