@@ -16,7 +16,6 @@ spring:
           uri: lb://AUTH-SERVICE
           predicates:
             - Path= /authenticate/**
-          
 server:
   port: 9191
 management:
